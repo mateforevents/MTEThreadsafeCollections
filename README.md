@@ -1,18 +1,31 @@
 # MTEThreadsafeCollections
-A collection of threadsafe replacements of NSMutableArray, NSMutableDictionary and NSMutableSet
+A collection of threadsafe replacements of NSMutableArray, NSMutableDictionary and NSMutableSet.
+This set is inspired by several similar approaches and classes around the globe. We implemented our own version and just now decided to make it public. Hance its redundancy with similar projects.
 
-## How To Get Started
+## Installation
 
-- Download [MTEThreadsafeCollections](https://github.com/mateforevents/MTEThreadsafeCollections/archive/master.zip) and drop it in your project or 
-- use [CocoaPods](http://cocoapods.org) 
+- use [CocoaPods](http://cocoapods.org)
 ```
     pod 'MTEThreadsafeCollections'
 ```
+- you can also only use one class by using
+```
+    pod 'MTEThreadsafeCollections/Array'
+```
+or
+```
+    pod 'MTEThreadsafeCollections/Dictionary'
+```
+or
+```
+    pod 'MTEThreadsafeCollections/Set'
+```
+- or download [MTEThreadsafeCollections](https://github.com/mateforevents/MTEThreadsafeCollections/archive/master.zip) the source and drop it in your project
 
 ## Usage
 
 you can use MTEThreadsafeArray, MTEThreadsafeSet and MTEThreadsafeDictionary in the same way you'd use NSMutableArray, NSMutableSet or NSMutableDictionary. The most important methods are implemented, NSCoding and NSCopying is working.
-The classes are backed up by a NSMutableArray/Set/Dictionary instance, which is accessed only on a concurrent queue. Threadsafety is assured since all writes are encapsulated with dispatch_barrier_async.
+The classes are backed up by NSMutableArray/Set/Dictionary instanced, which are accessed only on a concurrent queue. Threadsafety is assured since all writes are encapsulated with dispatch_barrier_async.
 
 ## Security Disclosure
 
