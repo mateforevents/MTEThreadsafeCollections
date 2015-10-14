@@ -9,10 +9,9 @@ Pod::Spec.new do |spec|
   	spec.platform     = :ios, "7.0"
 	spec.requires_arc = true
 	spec.source       = { :git => "https://github.com/mateforevents/MTEThreadsafeCollections.git", :tag => "v#{spec.version}" }
-	spec.description  <<-DESC
+	spec.description  = <<-DESC
 A collection of threadsafe replacements for NSMutableArray, NSMutableDictionary and NSMutableSet
-    DESC  	
-
+    	DESC  	
 
 	spec.subspec 'Array' do |ss|
 		ss.source_files  = "Pod/MTEThreadsafeArray.{h,m}"
