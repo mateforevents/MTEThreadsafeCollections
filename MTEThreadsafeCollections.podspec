@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   	end
 
 	spec.subspec 'Set' do |ss|
-		ss.source_files  = "Pod/MTEDictionarySet.{h,m}"
+		ss.source_files  = "Pod/MTEThreadsafeSet.{h,m}"
   	end
 
 end
