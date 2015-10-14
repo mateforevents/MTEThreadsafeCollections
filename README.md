@@ -10,15 +10,11 @@ This set is inspired by several similar approaches and classes around the globe.
 ```
 - you can also only use one class by using
 ```
-    pod 'MTEThreadsafeCollections/Array'
-```
-or
-```
-    pod 'MTEThreadsafeCollections/Dictionary'
-```
-or
-```
-    pod 'MTEThreadsafeCollections/Set'
+      pod 'MTEThreadsafeCollections/Array'
+    or
+      pod 'MTEThreadsafeCollections/Dictionary'
+    or
+      pod 'MTEThreadsafeCollections/Set'
 ```
 - or download [MTEThreadsafeCollections](https://github.com/mateforevents/MTEThreadsafeCollections/archive/master.zip) the source and drop it in your project
 
