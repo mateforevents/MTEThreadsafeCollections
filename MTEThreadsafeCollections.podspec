@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   	spec.name         = "MTEThreadsafeCollections"
-  	spec.version      = "1.0.2"
+  	spec.version      = "1.0.3"
   	spec.summary      = "Threadsafe collections as replacement for NSMutableArray/Dictionary/Set"
 	spec.description  = <<-DESC
 						A collection of threadsafe replacements for NSMutableArray, NSMutableDictionary and NSMutableSet. Uses GCD dispatch queues for threadsafety.
